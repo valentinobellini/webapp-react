@@ -2,7 +2,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // importa layout
-import { MainLayout } from "./layouts/MainLayout"
+import MainLayout from "./layouts/MainLayout"
+
+// importa le pages
+import HomePage from './pages/HomePage';
+import BookPage from './pages/MoviePage';
 
 import './App.css'
 
