@@ -2,7 +2,7 @@
 import { Outlet } from "react-router-dom"
 
 // importa header
-import { Header } from "./../components/Header"
+import Header from "./../components/Header"
 
 export default function MainLayout() {
 

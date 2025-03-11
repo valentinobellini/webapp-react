@@ -1,7 +1,10 @@
 export default function HomePage() {
 
     return (
-        <h1>hello world</h1>
+        <>
+            <h1>Bool Books</h1>
+            <h2><i>The nerdest book community</i></h2>
 
+        </>
     )
 }

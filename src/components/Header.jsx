@@ -1,7 +1,11 @@
 export default function Header() {
 
     return (
-        <h1>header</h1>
+        <nav className="">
+            <div className="">
+                <Link className="" to="/">Bool Books</Link>
+            </div>
+        </nav>
 
     )
 }
