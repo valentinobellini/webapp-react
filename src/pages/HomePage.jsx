@@ -5,11 +5,17 @@ export default function HomePage() {
 
     return (
         <>
-            <h1>Bool Books</h1>
+            <h1 className="text-primary">Bool Books</h1>
             <h2><i>The nerdest book community</i></h2>
 
-            <div>
+            <div className="row row-cols-3 mt-4">
                 <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+
 
             </div>
 

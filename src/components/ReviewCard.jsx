@@ -1,7 +1,7 @@
 export default function ReviewCard() {
 
     return (
-        <div className="card">
+        <div className="card mb-4">
             <div className="card-body">
                 <p className="card-text">
                     testo della recensione

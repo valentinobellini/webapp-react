@@ -9,7 +9,7 @@ export default function MainLayout() {
     return (
         <>
             <Header />
-            <main>
+            <main className="container">
                 <Outlet />
             </main>
         </>

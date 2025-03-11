@@ -3,8 +3,8 @@ import { Link } from "react-router"
 export default function MovieCard() {
 
     return (
-        <div className="card">
-            <img className="card-img"
+        <div className="card mb-4">
+            <img className="card-img-top"
                 src="http://localhost:3000/img/books/great-gatsby.jpg"
                 alt="descrizione img" />
             <div className="card-body">
@@ -17,7 +17,7 @@ export default function MovieCard() {
                 <p className="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto labore ad sapiente animi incidunt. Sit nihil sed, aliquam rerum ipsam illo optio impedit aperiam molestiae.
                 </p>
-                <Link to="movies/2" className="btn">See more</Link>
+                <Link to="movies/2" className="btn btn-primary">See more</Link>
             </div>
         </div>
 
