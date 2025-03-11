@@ -1,3 +1,5 @@
+import ReviewCard from "../components/ReviewCard"
+
 export default function MoviePage() {
     return (
         <>
@@ -18,6 +20,10 @@ export default function MoviePage() {
                         </p>
                     </div>
                 </div>
+
+                <section>
+                    <ReviewCard />
+                </section>
 
             </div>
         </>
