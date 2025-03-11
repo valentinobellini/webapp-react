@@ -5,7 +5,7 @@ export default function MovieCard() {
     return (
         <div className="card mb-4">
             <img className="card-img-top"
-                src="http://localhost:3000/img/books/great-gatsby.jpg"
+                src="/matrix.jpg"
                 alt="descrizione img" />
             <div className="card-body">
                 <h5 className="card-title">

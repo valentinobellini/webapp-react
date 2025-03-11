@@ -8,7 +8,7 @@ export default function MoviePage() {
             <div id="movie" className="border-bottom border-1 mb-3">
                 <div className="d-flex mb-3">
                     <img className="book-img"
-                        src="http://localhost:3000/img/books/great-gatsby.jpg"
+                        src="/matrix.jpg"
                         alt="descrizione img" />
                     <div>
                         <h1>Movie Title</h1>
