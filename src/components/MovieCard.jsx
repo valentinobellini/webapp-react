@@ -9,7 +9,7 @@ export default function MovieCard() {
                 alt="descrizione img" />
             <div className="card-body">
                 <h5 className="card-title">
-                    Titolo del libro
+                    Titolo del film
                 </h5>
                 <address><i>
                     By nome autore
