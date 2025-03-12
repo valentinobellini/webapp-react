@@ -10,15 +10,15 @@ export default function MovieCard({ movieProp }) {
 
     return (
         <div className="card mb-4">
-            <img className="card-img-top"
-                src={image}
-                alt={title} />
+            {/* image solo se presente */}
+            {image && <img className="card-img-top" src={image} alt={title} />}
             <div className="card-body">
                 <h5 className="card-title">
                     {title}
                 </h5>
                 <address><i>
-                    By {author}
+                    {/* autore solo se presente */}
+                    By {author || 'Anonymous'}
                 </i></address>
                 <p className="card-text">
                     {abstract}
