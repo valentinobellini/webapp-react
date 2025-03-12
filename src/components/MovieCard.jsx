@@ -23,7 +23,7 @@ export default function MovieCard({ movieProp }) {
                 <p className="card-text">
                     {abstract}
                 </p>
-                <Link to="movies/2" className="btn">See more</Link>
+                <Link to={`movies/${id}`} className="btn">See more</Link>
             </div>
         </div>
 
