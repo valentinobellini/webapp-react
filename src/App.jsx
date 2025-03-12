@@ -7,6 +7,7 @@ import MainLayout from "./layouts/MainLayout"
 // importa le pages
 import HomePage from './pages/HomePage';
 import BookPage from './pages/MoviePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
           <Route element={<MainLayout />}>
             <Route index path="/" element={<HomePage />} />
             <Route path="/movies/:id" element={<BookPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
       </Router>

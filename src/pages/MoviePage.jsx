@@ -5,7 +5,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 
 // importa link from react-router
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams, useNavigate } from "react-router-dom"
 
 import ReviewCard from "../components/ReviewCard"
 
@@ -18,6 +18,10 @@ export default function MoviePage() {
     const [movie, setMovie] = useState({ reviews: [] })
 
 
+    // redirect useNavigate
+    const redirect = useNavigate();
+
+
 
     // funzione fetch movie
     const fetchMovie = () => {
@@ -27,7 +31,7 @@ export default function MoviePage() {
                     setMovie(res.data)
                 }
             )
-            .catch(err => console.error(err))
+            .catch(err => { console.error(err); if (err.response.status === 404) redirect('/404') })
     }
 
 
