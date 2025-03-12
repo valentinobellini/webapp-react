@@ -1,21 +1,27 @@
+// importa link from react-router
 import { Link } from "react-router"
 
-export default function MovieCard() {
+
+
+export default function MovieCard({ movieProp }) {
+
+    const { id, title, author, abstract, image } = movieProp;
+
 
     return (
         <div className="card mb-4">
             <img className="card-img-top"
-                src="/matrix.jpg"
-                alt="descrizione img" />
+                src={image}
+                alt={title} />
             <div className="card-body">
                 <h5 className="card-title">
-                    Titolo del film
+                    {title}
                 </h5>
                 <address><i>
-                    By nome autore
+                    By {author}
                 </i></address>
                 <p className="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto labore ad sapiente animi incidunt. Sit nihil sed, aliquam rerum ipsam illo optio impedit aperiam molestiae.
+                    {abstract}
                 </p>
                 <Link to="movies/2" className="btn">See more</Link>
             </div>
