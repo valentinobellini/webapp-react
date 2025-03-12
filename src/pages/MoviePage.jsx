@@ -7,7 +7,7 @@ export default function MoviePage() {
         <>
             <div id="movie" className="border-bottom border-1  mb-3">
                 <div className="d-flex mb-3">
-                    <img className="book-img"
+                    <img className="movie-img"
                         src="/matrix.jpg"
                         alt="descrizione img" />
                     <div>
