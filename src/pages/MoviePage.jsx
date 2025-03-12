@@ -29,6 +29,7 @@ export default function MoviePage() {
             .then(
                 res => {
                     setMovie(res.data)
+
                 }
             )
             .catch(err => { console.error(err); if (err.response.status === 404) redirect('/404') })
