@@ -17,7 +17,7 @@ export default function MovieCard() {
                 <p className="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto labore ad sapiente animi incidunt. Sit nihil sed, aliquam rerum ipsam illo optio impedit aperiam molestiae.
                 </p>
-                <Link to="movies/2" className="btn btn-primary">See more</Link>
+                <Link to="movies/2" className="btn">See more</Link>
             </div>
         </div>
 

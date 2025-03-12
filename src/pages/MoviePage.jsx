@@ -5,7 +5,7 @@ import ReviewCard from "../components/ReviewCard"
 export default function MoviePage() {
     return (
         <>
-            <div id="movie" className="border-bottom border-1 mb-3">
+            <div id="movie" className="border-bottom border-1  mb-3">
                 <div className="d-flex mb-3">
                     <img className="book-img"
                         src="/matrix.jpg"
