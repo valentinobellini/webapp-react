@@ -7,7 +7,9 @@ import { useEffect, useState } from "react"
 // importa link from react-router
 import { Link, useParams, useNavigate } from "react-router-dom"
 
+// importa componenti
 import ReviewCard from "../components/ReviewCard"
+import ReviewForm from "../components/ReviewForm"
 
 export default function MoviePage() {
 
@@ -84,7 +86,13 @@ export default function MoviePage() {
                         <h4>Our community reviews</h4>
                     </div>
                     {renderReviews()}
+                </section>
 
+                <section>
+                    <ReviewForm movie_id={movie.id} fetchMovie={fetchMovie} />
+                </section>
+
+                <section>
                     <div className="border-top border-1 pt-2 mb-3 d-flex justify-content-end">
                         <Link className="btn btn-secondary" to="/">Back to home</Link>
                     </div>
