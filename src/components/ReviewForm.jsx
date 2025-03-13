@@ -8,7 +8,7 @@ export default function ReviewForm({ movie_id, fetchMovie }) {
     const initialState = {
         name: '',
         text: '',
-        vote: 1
+        vote: ''
     }
 
     // variabile di stato per i dati del form
