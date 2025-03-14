@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -62,33 +61,40 @@ export default function CreateMoviePage() {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h2>Add new movie</h2>
-            <div className="mb-3">
-                <label htmlFor="title" className="form-label">Title:</label>
-                <input type="text" id="title" name="title" className="form-control" value={formDataObj.title} onChange={handleChange} />
-            </div>
-            <div className="mb-3">
-                <label htmlFor="director" className="form-label">Director:</label>
-                <input type="text" id="director" name="director" className="form-control" value={formDataObj.director} onChange={handleChange} />
-            </div>
-            <div className="mb-3">
-                <label htmlFor="genre" className="form-label">Genre:</label>
-                <input type="text" id="genre" name="genre" className="form-control" value={formDataObj.genre} onChange={handleChange} />
-            </div>
-            <div className="mb-3">
-                <label htmlFor="release_year" className="form-label">Release Year:</label>
-                <input type="number" id="release_year" name="release_year" className="form-control" value={formDataObj.release_year} onChange={handleChange} />
-            </div>
-            <div className="mb-3">
-                <label htmlFor="abstract" className="form-label">Abstract:</label>
-                <textarea id="abstract" name="abstract" className="form-control" value={formDataObj.abstract} onChange={handleChange}></textarea>
-            </div>
-            <div className="mb-3">
-                <label htmlFor="image" className="form-label">Image:</label>
-                <input type="file" id="image" name="image" className="form-control" onChange={handleChange} />
-            </div>
-            <button type="submit" className="mb-3 btn btn-primary">Submit</button>
-        </form>
+        <>
+
+            <form onSubmit={handleSubmit}>
+                <h2>Add new movie</h2>
+                <div className="mb-3">
+                    <label htmlFor="title" className="form-label">Title:</label>
+                    <input type="text" id="title" name="title" className="form-control" value={formDataObj.title} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="director" className="form-label">Director:</label>
+                    <input type="text" id="director" name="director" className="form-control" value={formDataObj.director} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="genre" className="form-label">Genre:</label>
+                    <input type="text" id="genre" name="genre" className="form-control" value={formDataObj.genre} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="release_year" className="form-label">Release Year:</label>
+                    <input type="number" id="release_year" name="release_year" className="form-control" value={formDataObj.release_year} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="abstract" className="form-label">Abstract:</label>
+                    <textarea id="abstract" name="abstract" className="form-control" value={formDataObj.abstract} onChange={handleChange}></textarea>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="image" className="form-label">Image:</label>
+                    <input type="file" id="image" name="image" className="form-control" onChange={handleChange} />
+                </div>
+                <button type="submit" className="mt-3 mb-3 btn btn-primary">Submit</button>
+            </form>
+
+
+
+        </>
+
     )
 }

@@ -5,9 +5,17 @@ body {
 
 }
 
+.navbar-container {
+    width: 100%;
+    background-color: rgb(235, 168, 106);
+    margin-bottom: 2rem;
+}
+
+
 .navbar {
     background-color: rgb(235, 168, 106);
     margin-bottom: 2rem;
+    width: 70%;
 }
 
 
@@ -32,5 +40,12 @@ h1 {
 
 .btn {
     background-color: rgb(235, 168, 106);
+}
 
+.card-body {
+    min-height: 220px;
+}
+
+.card-text {
+    min-height: 80px;
 }

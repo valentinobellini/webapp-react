@@ -63,7 +63,7 @@ export default function MoviePage() {
 
     return (
         <>
-            <div id="movie" className="border-bottom border-1  mb-3">
+            <div id="movie" className="mb-5">
                 <div className="d-flex mb-3">
                     <img className="movie-img"
                         src={movie.image}
@@ -91,13 +91,6 @@ export default function MoviePage() {
                 <section>
                     <ReviewForm movie_id={movie.id} fetchMovie={fetchMovie} />
                 </section>
-
-                <section>
-                    <div className="border-top border-1 pt-2 mb-3 d-flex justify-content-end">
-                        <Link className="btn btn-secondary" to="/">Back to home</Link>
-                    </div>
-                </section>
-
             </div>
         </>
 
