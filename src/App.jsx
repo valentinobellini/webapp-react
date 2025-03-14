@@ -8,6 +8,7 @@ import MainLayout from "./layouts/MainLayout"
 import HomePage from './pages/HomePage';
 import BookPage from './pages/MoviePage';
 import NotFoundPage from './pages/NotFoundPage';
+import CreateMoviePage from './pages/CreateMoviePage';
 
 import './App.css'
 
@@ -22,6 +23,7 @@ function App() {
             <Route index path="/" element={<HomePage />} />
             <Route path="/movies/:id" element={<BookPage />} />
             <Route path="*" element={<NotFoundPage />} />
+            <Route path="/create" element={<CreateMoviePage />} />
           </Route>
         </Routes>
       </Router>

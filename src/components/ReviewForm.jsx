@@ -55,7 +55,7 @@ export default function ReviewForm({ movie_id, fetchMovie }) {
                 <label htmlFor="vote" className="form-label">Vote:</label>
                 <input type="number" id="vote" name="vote" className="form-control" min="1" max="5" value={formData.vote} onChange={handleChange} />
             </div>
-            <button type="submit" className="btn btn-primary" >Submit</button>
+            <button type="submit" className="mb-3 btn btn-primary" >Submit</button>
         </form>
     )
 }

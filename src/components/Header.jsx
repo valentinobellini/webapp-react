@@ -7,7 +7,13 @@ export default function Header() {
             <div className="container-fluid justify-content-start">
                 <Link className="navbar-brand" to="/">Bool Movies</Link>
             </div>
+
+            <div className="container-fluid justify-content-start">
+                <Link className="navbar-brand" to="/create">Add Movie</Link>
+            </div>
         </nav>
+
+
 
     )
 }
